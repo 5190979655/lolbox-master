@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10px"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:background="@drawable/selector_bg">
+
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="136px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16px"
+        android:layout_marginRight="20px"
+        android:drawablePadding="12px"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/item_header"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignBottom="@id/item_image"
+        android:layout_marginBottom="-30px"
+        android:layout_marginLeft="12px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_image"
+        android:layout_marginLeft="80px"
+        android:maxLines="1"
+        android:paddingTop="8px"
+        android:paddingBottom="8px"
+        android:textColor="#858585"
+        android:textSize="20px" />
+
+
+    <TextView
+        android:id="@+id/item_descript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_image"
+        android:layout_marginBottom="18px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="48px"
+        android:ellipsize="end"
+        android:lineSpacingExtra="12px"
+        android:maxLines="2"
+        android:textColor="@color/color3"
+        android:textSize="26px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

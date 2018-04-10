@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--搜索-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="#f3f3f3">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="140px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:background="@drawable/shape_discover_hero_all_search_bg"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@id/tv_search"
+            android:background="@color/white"
+            android:hint="请输入英雄关键字"
+            android:paddingLeft="62px"
+            android:textColor="@color/color9"
+            android:textColorHint="@color/color9"
+            android:textSize="24px" />
+
+
+        <ImageView
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_search" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!--选择条件-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="98px"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/heroType"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/shape_discover_hero_all_tv_line_normal"
+            android:gravity="center"
+            android:paddingRight="50px"
+            android:text="类型"
+            android:textColor="@color/color6"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="52px"
+            android:background="#f3f3f3" />
+
+
+        <TextView
+            android:id="@+id/heroPosition"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/shape_discover_hero_all_tv_line_normal"
+            android:gravity="center"
+            android:paddingRight="50px"
+            android:text="位置"
+            android:textColor="@color/color6"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="52px"
+            android:background="#f3f3f3" />
+
+        <TextView
+            android:id="@+id/heroMoney"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/shape_discover_hero_all_tv_line_normal"
+            android:gravity="center"
+            android:paddingRight="50px"
+            android:text="价格"
+            android:textColor="@color/color6"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="52px"
+            android:background="#f3f3f3" />
+
+        <TextView
+            android:id="@+id/heroOrder"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/shape_discover_hero_all_tv_line_normal"
+            android:gravity="center"
+            android:paddingRight="50px"
+            android:text="排序"
+            android:textColor="@color/color6"
+            android:textSize="26px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mains"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="178px"
+        android:overScrollMode="never"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

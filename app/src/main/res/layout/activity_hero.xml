@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.HeroActivity">
+
+
+    <include
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="96px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="96px"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!--免费-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/hero_free"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg">
+
+            <TextView
+                android:id="@+id/tv_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="免费"
+                android:textColor="@color/main"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_free_line"
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--全部-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/hero_all"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部"
+                android:textColor="@color/color9"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_all_line"
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="192px"
+        android:overScrollMode="never" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

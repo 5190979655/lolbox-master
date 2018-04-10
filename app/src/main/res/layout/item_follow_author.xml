@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="327px"
+    android:layout_marginLeft="4px"
+    android:layout_marginRight="4px"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="198px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/item_header"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="12px"
+        android:layout_marginTop="169px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="168px"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="15px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fanhe_icon_video_times" />
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_image"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="10px"
+        android:textColor="@color/color9"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_image"
+        android:layout_marginRight="14px"
+        android:layout_marginTop="48px"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="14px"
+        android:textColor="@color/color3"
+        android:textSize="27px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

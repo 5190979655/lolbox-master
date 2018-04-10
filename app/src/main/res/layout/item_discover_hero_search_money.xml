@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12px"
+    android:layout_marginTop="12px">
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:textColor="@color/color9"
+        android:textSize="24px" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_child"
+        android:layout_marginTop="12px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:overScrollMode="never" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

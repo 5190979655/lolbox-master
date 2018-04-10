@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160px"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20px"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:background="@drawable/selector_home_program_bg">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12px"
+        android:layout_marginTop="22px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color9"
+        android:textSize="28px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

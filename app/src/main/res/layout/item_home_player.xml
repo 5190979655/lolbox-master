@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10px"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:layout_marginTop="10px"
+    android:background="@drawable/selector_bg">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="330px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@id/item_image"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="10px"
+        android:textColor="@color/color3"
+        android:textSize="28px" />
+
+
+    <TextView
+        android:id="@+id/item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14px"
+        android:layout_marginRight="26px"
+        android:drawablePadding="12px"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

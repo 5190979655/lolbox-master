@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/main"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="@color/white"
+        android:textSize="34px" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="96px"
+        android:background="@color/white"
+        android:overScrollMode="never" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:overScrollMode="never" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

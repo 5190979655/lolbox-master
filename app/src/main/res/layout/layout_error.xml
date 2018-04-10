@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="190px"
+        android:layout_height="276px"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hint_icon" />
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44px"
+        android:text="没有数据哦~"
+        android:textColor="#9c9c9c"
+        android:textSize="30px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

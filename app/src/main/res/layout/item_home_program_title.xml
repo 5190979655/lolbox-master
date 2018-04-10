@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/item_close"
+        android:layout_width="66px"
+        android:layout_height="66px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:padding="9px"
+        android:src="@drawable/icon_titlebar_close_normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/item_close"
+        android:background="@color/colorBG"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="96px"
+        android:layout_below="@id/item_line"
+        android:gravity="center"
+        android:paddingLeft="40px"
+        android:textColor="@color/color3"
+        android:textSize="34px" />
+
+
+    <TextView
+        android:id="@+id/item_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="96px"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@id/item_close"
+        android:padding="20px"
+        android:textColor="@color/main"
+        android:textSize="30px"
+        android:visibility="gone" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

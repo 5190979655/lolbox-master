@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">多玩饭盒</string>
+    <string name="string_nonet">当前无网络连接，请检查~</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+
+</resources>

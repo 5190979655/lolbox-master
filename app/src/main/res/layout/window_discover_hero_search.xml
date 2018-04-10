@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/window_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:paddingBottom="18px"
+        android:paddingLeft="9px"
+        android:paddingRight="9px"
+        android:paddingTop="18px" />
+
+    <TextView
+        android:id="@+id/window_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/window_child"
+        android:alpha="0.6"
+        android:background="@color/black" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

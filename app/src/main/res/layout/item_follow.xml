@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#edebec" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="96px"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="最近更新"
+        android:textColor="#999999"
+        android:textSize="23px" />
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="36px"
+        android:paddingLeft="6px"
+        android:paddingRight="6px"
+        android:layout_height="96px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56px"
+        android:layout_marginTop="20px"
+        android:adjustViewBounds="true"
+        android:paddingBottom="36px"
+        android:paddingTop="46px"
+        android:scaleType="centerCrop"
+        android:visibility="invisible" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_marginTop="24px"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:paddingBottom="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

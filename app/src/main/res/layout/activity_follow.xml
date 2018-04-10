@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.FollowActivity">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="76px"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:paddingBottom="36px"
+            android:paddingLeft="26px"
+            android:paddingRight="32px"
+            android:paddingTop="36px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="88px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="#ff5550"
+            android:textSize="26px" />
+
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_search"
+            android:layout_toRightOf="@id/finish"
+            android:background="#f3f3f3"
+            android:gravity="center_vertical"
+            android:hint="搜索你喜欢的用户和视频~"
+            android:paddingLeft="72px"
+            android:textColor="@color/color3"
+            android:textColorHint="#979797"
+            android:textSize="23px" />
+
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="101px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_search" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="108px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadmore="false"
+        app:srlEnableLoadmoreWhenContentNotFull="false">
+
+
+        <include
+            layout="@layout/layout_loading_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.DiscoverSearchActivity">
+
+
+    <include
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="96px" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96px"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/searchName"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_discover_search_editext_bg"
+                android:gravity="center_vertical"
+                android:hint="请输入召唤师名称"
+                android:paddingLeft="30px"
+                android:textColor="#b3b3b3"
+                android:textSize="26px" />
+
+
+            <TextView
+                android:id="@+id/searchService"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/shape_discover_search_editext_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="艾欧尼亚 电信一"
+                android:textColor="@color/color3"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/searchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginLeft="24px"
+                android:layout_marginBottom="50px"
+                android:layout_marginRight="24px"
+                android:background="@drawable/shape_msg_add_btn_bg"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="32px" />
+
+            <!--分割线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="20px"
+                android:background="#f3f3f3" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="26px"
+                    android:gravity="center"
+                    android:text="最近搜索"
+                    android:textColor="#b6b6b6"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/clearBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px"
+                    android:text="清空记录"
+                    android:textColor="@color/main"
+                    android:textSize="22px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/searchUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f3f3f3"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

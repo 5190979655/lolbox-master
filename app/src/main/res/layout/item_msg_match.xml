@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="174px"
+    android:background="@drawable/selector_bg">
+
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="176px"
+        android:layout_height="132px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:paddingRight="50px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/item_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color3"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/item_descript"
+        android:paddingRight="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="23px"
+        android:layout_toRightOf="@id/item_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#a1a1a1"
+        android:textSize="21px" />
+
+    <TextView
+        android:id="@+id/item_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25px"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/item_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#cccccc"
+        android:textSize="17px" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25px"
+        android:layout_marginRight="23px"
+        android:textColor="#cccccc"
+        android:textSize="17px" />
+
+    <TextView
+        android:background="#eeeeee"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

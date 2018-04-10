@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="94px"
+    android:layout_height="190px"
+    android:layout_marginLeft="42px"
+    android:layout_marginRight="42px">
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="94px"
+        android:layout_height="94px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_follow_user_header_bg"
+        android:padding="2px">
+
+        <ImageView
+            android:id="@+id/item_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/box_auth_girl" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color3"
+        android:textSize="30px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/item_header"
+        android:layout_width="62px"
+        android:layout_height="62px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:adjustViewBounds="true"
+        android:background="@drawable/shape_home_list_video_header_bg"
+        android:padding="2px"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="46px"
+        android:layout_toRightOf="@id/item_header"
+        android:textColor="#989898"
+        android:textSize="30px" />
+
+
+    <TextView
+        android:id="@+id/item_follow"
+        android:layout_width="120px"
+        android:layout_height="56px"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="32px"
+        android:background="@drawable/shape_home_list_video_follow_bg"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="@color/main"
+        android:textSize="26px" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_below="@id/item_follow">
+
+        <!--播放器-->
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/item_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/item_start"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vhuya_play_icon" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/item_descript"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="520px"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:text="我爱你"
+        android:textColor="#989898"
+        android:textSize="30px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_below="@id/item_descript"
+        android:gravity="center"
+        android:weightSum="5">
+
+
+        <ImageView
+            android:id="@+id/item_up"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_link_click" />
+
+        <ImageView
+            android:id="@+id/item_down"
+            android:layout_width="27px"
+            android:layout_height="24px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_no_link_click" />
+
+        <ImageView
+            android:id="@+id/item_msg"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_brrage_click" />
+
+        <ImageView
+            android:id="@+id/item_like"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_house_click" />
+
+        <ImageView
+            android:id="@+id/item_download"
+            android:layout_width="26px"
+            android:layout_height="27px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/vhuya_download" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/item_descript"
+        android:layout_marginTop="88px"
+        android:background="@color/color3" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="254px"
+        android:layout_below="@id/item_descript"
+        android:layout_marginTop="89px">
+
+
+        <ImageView
+            android:id="@+id/item_danmu"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16px"
+            android:layout_marginLeft="20px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vhuya_on_barrage" />
+
+        <ImageView
+            android:id="@+id/item_write"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vhuya_write_barrage" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:layout_alignParentBottom="true"
+            android:background="#100f0e" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="106px"
+        android:layout_marginLeft="25px"
+        android:gravity="center"
+        android:text="用户"
+        android:textColor="@color/color9"
+        android:textSize="23px" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106px"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:paddingLeft="5px"
+        android:paddingRight="5px" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/item_child"
+        android:layout_gravity="bottom"
+        android:background="#f3f3f3" />
+
+    <TextView
+        android:id="@+id/item_more"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@id/item_child"
+        android:layout_marginTop="1px"
+        android:gravity="center"
+        android:paddingRight="30px"
+        android:textColor="@color/color3"
+        android:textSize="26px" />
+
+    <ImageView
+        android:src="@drawable/icon_live_arrow_more"
+        android:layout_width="14px"
+        android:layout_height="22px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_child"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="34px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:layout_below="@id/item_child"
+        android:layout_marginTop="89px"
+        android:background="#f3f3f3" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

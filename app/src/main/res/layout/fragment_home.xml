@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/main"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="视频"
+            android:textColor="@color/white"
+            android:textSize="26px" />
+
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/video"
+            android:gravity="center"
+            android:text="直播"
+            android:textColor="@color/white"
+            android:textSize="26px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mains"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96px"
+        android:overScrollMode="never" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

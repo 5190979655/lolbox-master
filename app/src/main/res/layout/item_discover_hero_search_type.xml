@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60px"
+    android:layout_marginBottom="12px"
+    android:layout_marginLeft="15px"
+    android:layout_marginRight="15px"
+    android:layout_marginTop="12px">
+
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_follow_hero_tv_normal"
+        android:gravity="center"
+        android:textColor="#808080"
+        android:textSize="20px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.FollowAuthorActivity">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/main">
+
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:padding="30px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nav_back_click" />
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="44px"
+            android:layout_height="8px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/box_actionbar_more_icon" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96px"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="200px"
+                android:background="#f3f3f3" />
+
+            <!--头像-->
+            <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/headers"
+                android:layout_width="116px"
+                android:layout_height="116px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="47px">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_gravity="bottom|right"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/box_auth_newsauthor" />
+
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47px"
+                android:layout_marginTop="32px"
+                android:layout_toRightOf="@id/headers"
+                android:text="洗发林"
+                android:textColor="@color/color3"
+                android:textSize="28px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="47px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/headers"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="粉丝：2188"
+                    android:textColor="#808080"
+                    android:textSize="23px" />
+
+                <TextView
+                    android:layout_width="2px"
+                    android:layout_height="33px"
+                    android:layout_marginLeft="12px"
+                    android:background="#f3f3f3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:text="视频：625"
+                    android:textColor="#808080"
+                    android:textSize="23px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fans"
+                android:layout_marginLeft="47px"
+                android:layout_marginTop="14px"
+                android:layout_toRightOf="@id/headers"
+                android:text="认证信息：饭盒播主 认证视频作者"
+                android:textColor="#999999"
+                android:textSize="22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author"
+                android:layout_marginLeft="47px"
+                android:layout_marginTop="4px"
+                android:layout_toRightOf="@id/headers"
+                android:text="不签名 就是这么任性"
+                android:textColor="@color/color9"
+                android:textSize="25px" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mains"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="220px"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </ScrollView>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
